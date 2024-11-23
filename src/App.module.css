@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diff {
+  position: absolute;
+  padding: 6px 8px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+}
+.diff img {
+  width: 8px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.horizontal {
+  position: absolute;
+  height: 1px;
+  border-radius: 1px;
+  background-color: #898290;
+  top: 94.5px;
+}
+
+.vertical {
+  position: absolute;
+  top: 94.5px;
+  width: 1px;
+  border-radius: 1px;
+  background-color: #898290;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  max-height: 239.5px;
+}
+
+.view {
+  width: 80%;
+  height: 534px;
+  border: 1px solid #ebeaec;
+  border-radius: 7px;
+  box-shadow: 0 0 1px 0 rgba(61, 57, 54, 0.0392156863), 0 2px 6px 0 rgba(61, 57, 54, 0.0392156863), 0 10px 20px 0 rgba(61, 57, 54, 0.0392156863);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  resize: horizontal;
+  overflow: auto;
+}
+.view_header {
+  margin: 13px 20px 0 20px;
+  width: auto;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.view_header span {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #898290;
+}
+.view_data {
+  width: auto;
+  margin: 50px 20px 40px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view_data_info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.view_data_info_column {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.view_data_info_column_conteiner {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+.view_data_info_column_graf {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.view_data_info_column_graf_norm {
+  min-height: 30px !important;
+  background: repeating-linear-gradient(-45deg, #64b5f6, #64b5f6 10px, white 10px, white 17px);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view_data_info_column_graf_norm_text {
+  z-index: 3;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #898290;
+  font-family: Roboto, sans-serif;
+  width: auto;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+}
+.view_data_info_column_graf div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  min-height: 30px !important;
+}
+.view_data_info_column_graf_front {
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+  background-color: #4AB6E8;
+}
+.view_data_info_column_graf_back {
+  height: 50px;
+  background-color: #AA6FAC;
+}
+.view_data_info_column_graf_db {
+  height: 50px;
+  background-color: #E85498;
+  border-radius: 0 0 10px 10px;
+}
+.view_data_info_column > span {
+  margin-top: 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.72px;
+  color: #898290;
+}
+.view_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 20px 20px 20px;
+  width: auto;
+}
+.view_footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.view_footer div span:nth-child(2) {
+  margin-right: 47px;
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.72px;
+  color: #898290;
+}
+.view_footer div span:nth-child(1) {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: red;
+  margin-right: 9px;
+}
+
+.buttons {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.buttons button {
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=App.module.css.map */
